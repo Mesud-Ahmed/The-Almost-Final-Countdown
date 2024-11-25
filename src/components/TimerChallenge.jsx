@@ -9,7 +9,7 @@ export default function TimerChallenge({ title, targetTime }) {
 
     if (timeRemaining <= 0) {
         clearInterval(timer.current)
-
+        
         dialog.current.open()
     }
     const handleStart = () => {
