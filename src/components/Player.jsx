@@ -1,7 +1,6 @@
 import { useRef, useState } from "react"
 export default function Player() {
-    // Use refs for non-rendering-related tasks 
-    // (like storing a mutable value or directly interacting with the DOM
+    
     const playerName = useRef()
     const [name, setName] = useState(null)
 
