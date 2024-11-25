@@ -1,8 +1,15 @@
-# React + Vite
+# The Almost Final Countdown - Mini Web Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive web game where a player try to stop a timer as close as possible to a target time. 
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out a live demo of the game here:  
+[Live Demo - The Almost Final Countdown]()
+
+## Features
+- Play with predefined challenges. 
+- Add new custom challenges with any time limit.
+- Score is calculated based on how close you stop the timer to the target time.
+- Modal dialogs to show results after completing a challenge.
+- User-friendly interface with a clean design.

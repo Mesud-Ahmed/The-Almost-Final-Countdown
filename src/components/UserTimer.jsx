@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 export default function UserTimer({ onAddChallenge, onClose, open }) {
     const [newTitle, setNewTitle] = useState('');
     const [newTime, setNewTime] = useState('');
@@ -12,7 +13,7 @@ export default function UserTimer({ onAddChallenge, onClose, open }) {
         }
     };
 
-    return (
+    return createPortal(
         <dialog className="result-modal" open={open}>
             <p>
                 <label htmlFor="title">Challenge Name: </label>
@@ -29,11 +30,12 @@ export default function UserTimer({ onAddChallenge, onClose, open }) {
                     id="time"
                     type="number"
                     value={newTime}
+                    placeholder="in seconds"
                     onChange={(e) => setNewTime(e.target.value)}
                 />
             </p>
             <button onClick={handleAddChallenge}>Add Challenge</button>
             <button onClick={onClose}>Cancel</button>
-        </dialog>
+        </dialog>,document.getElementById('newModal')
     )
 }

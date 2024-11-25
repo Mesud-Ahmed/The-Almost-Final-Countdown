@@ -9,7 +9,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(#186a5e, #053339);
+  background: radial-gradient(#186a5e, #2a8b97);
   color: #e1eeeb;
   min-height: 100vh;
 }
@@ -18,7 +18,7 @@ body {
   max-width: 60rem;
   margin: 2rem auto;
   padding: 2rem;
-  background: radial-gradient(#0b201d, #021619);
+  background: radial-gradient(#799994, #021619);
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
@@ -101,9 +101,9 @@ header p {
   justify-content: center;
   padding: 2rem;
   margin: 2rem auto;
-  background: linear-gradient(#4df8df, #4df0f8);
+  background: linear-gradient(#1C325B, #7f94b4);
   
-  color: #221c18;
+  color: #0e0d0d;
   box-shadow: 0 2px 8px rgba(35, 34, 34, 0.6);
   border-radius: 6px;
 }
@@ -113,7 +113,7 @@ header p {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
-  background: #12352f;
+  background: #245048;
   color: #edfcfa;
   font-size: 1.2rem;
   cursor: pointer;
@@ -133,7 +133,7 @@ header p {
 }
 
 .challenge-time {
-  border: 1px solid #46cebe;
+  border: 1px solid #252b2a;
   border-radius: 4px;
   padding: 0.25rem 0.5rem;
   margin: 0.5rem;
@@ -148,12 +148,19 @@ header p {
   border-radius: 8px;
   padding: 2rem;
   background-color: #d7fcf8;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.result-modal[open] {
-  animation: slide-in-from-top 0.35s ease-out;
+#addIcon{
+  width: 60px;
 }
-
+.result-modal button{
+  margin: 15px;
+}
 .result-modal::backdrop {
   background: rgba(0, 0, 0, 0.9);
 }
