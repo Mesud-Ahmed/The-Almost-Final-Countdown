@@ -5,7 +5,7 @@ A fun and interactive web game where a player try to stop a timer as close as po
 ## Live Demo
 
 Check out a live demo of the game here:  
-[Live Demo - The Almost Final Countdown]()
+[Live Demo - The Almost Final Countdown](https://the-almost-final-countdown-chi.vercel.app/)
 
 ## Features
 - Play with predefined challenges. 
